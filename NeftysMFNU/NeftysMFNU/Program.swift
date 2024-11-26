@@ -8,7 +8,7 @@
 import Foundation
 
 public struct NeftysMFNU {
-    var settings
+    
     
     init() {
         
