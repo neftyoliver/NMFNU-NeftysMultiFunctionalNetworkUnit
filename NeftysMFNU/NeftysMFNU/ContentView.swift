@@ -7,19 +7,18 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     var body: some View {
-        VStack {
-            
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hosting Network!")
-            
-            
+        HStack(alignment: .top) {
+            NavigationView {
+                List { //The menus for left side.
+                }
+            }
+            .opacity(0.5)
+            .blur(radius: 0.5)
         }
-        .padding()
-        .frame(minWidth: 240, maxWidth: .infinity, minHeight: 120, maxHeight: .infinity)
+        .frame(minWidth: 240, maxWidth: .infinity, minHeight: 80, maxHeight: .infinity)
     }
 }
 
