@@ -20,14 +20,6 @@ public enum FileError: Int32, Error {
     case notAFileError = 6
 }
 
-/*
-public enum MachineKind: Int32 {
-    case macOS = 1
-    case iOS = 2
-    case OTHER = 3
-    case UNKNOWN = 4
-}
-*/
 
 public struct ProgramSettings: Codable {
     //default valus are in the literals
