@@ -19,7 +19,7 @@ struct ContentView: View {
             
         }
         .padding()
-        .frame(minWidth: 120, maxWidth: .infinity, minHeight: 70, maxHeight: .infinity)
+        .frame(minWidth: 240, maxWidth: .infinity, minHeight: 120, maxHeight: .infinity)
     }
 }
 
