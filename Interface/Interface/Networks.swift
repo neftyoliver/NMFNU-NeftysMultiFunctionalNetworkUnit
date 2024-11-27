@@ -36,6 +36,6 @@ public protocol Network {
     func activate()
     func deactivate()
     func kick(ID: String)
-    
+    func uploadHTTP()
 }
 

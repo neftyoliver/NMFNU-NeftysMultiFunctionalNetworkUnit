@@ -69,6 +69,7 @@ public protocol MFNUHardware {
 public enum MFNUDeviceMode: String {
     case HOST = "HOST"
     case DEVICE = "DEVICE"
+    case ROUTER = "ROUTER"
 }
 
 public protocol MFNUDevice { //incase host and devices both have MFNU
