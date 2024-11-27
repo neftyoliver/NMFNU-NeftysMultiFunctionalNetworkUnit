@@ -42,30 +42,9 @@
 		EDAFD0D42CF6F7650023F8CD /* Interface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Interface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		EDAFD0C62CF6F6D40023F8CD /* Exceptions for "MFNUCore" folder in "MFNUCore" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			publicHeaders = (
-				MFNUCore.h,
-			);
-			target = EDAFD0B32CF6F6D40023F8CD /* MFNUCore */;
-		};
-		EDAFD0D22CF6F7440023F8CD /* Exceptions for "MFNUCore" folder in "MFNUCoreTests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				File.swift,
-			);
-			target = EDAFD0BD2CF6F6D40023F8CD /* MFNUCoreTests */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EDAFD0B62CF6F6D40023F8CD /* MFNUCore */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				EDAFD0C62CF6F6D40023F8CD /* Exceptions for "MFNUCore" folder in "MFNUCore" target */,
-				EDAFD0D22CF6F7440023F8CD /* Exceptions for "MFNUCore" folder in "MFNUCoreTests" target */,
-			);
 			path = MFNUCore;
 			sourceTree = "<group>";
 		};
