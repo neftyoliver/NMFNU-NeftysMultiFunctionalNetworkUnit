@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:NeftysMFNU/NeftysMFNU.xcodeproj">
+      location = "group:Interface/Interface.xcodeproj">
    </FileRef>
 </Workspace>
