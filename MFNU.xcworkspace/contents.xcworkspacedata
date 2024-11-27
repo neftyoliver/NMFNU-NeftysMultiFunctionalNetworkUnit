@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MFNUCore/MFNUCore.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MFNUColsoleApp/MFNUColsoleApp.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Interface/Interface.xcodeproj">
    </FileRef>
 </Workspace>

@@ -25,7 +25,7 @@ public protocol CLIProgramSpecification {
     func saveNetworkPresets()
     func saveNetworkPreset(_ networkID: String)
     
-    
+    //Add plugin support in near future.
     
     init ()
 }
