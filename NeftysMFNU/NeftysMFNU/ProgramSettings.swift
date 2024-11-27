@@ -8,7 +8,7 @@
 import Foundation
 
 public let settingFileName: String = "settings.json"
-public let defaultSettings: ProgramSettings = .init()
+@MainActor public let defaultSettings: ProgramSettings = .init()
 
 public enum FileError: Int32, Error {
     case noProblem = 0
@@ -29,7 +29,7 @@ public struct ProgramSettings: Codable {
     
     
     
-    public static func loadOrDefault() -> (ProgramSettings, FileError) {
+    @MainActor public static func loadOrDefault() -> (ProgramSettings, FileError) {
         let isFileExist = FileManager.default.fileExists(atPath: settingFileName)
         
         if !isFileExist {

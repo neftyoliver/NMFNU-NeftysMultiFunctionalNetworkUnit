@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@main
 struct NeftysMFNUApp: App {
     var body: some Scene {
         WindowGroup {

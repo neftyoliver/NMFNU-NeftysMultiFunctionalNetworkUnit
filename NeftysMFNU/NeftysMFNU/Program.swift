@@ -7,10 +7,20 @@
 
 import Foundation
 
+@main
 public struct NeftysMFNU {
     
     
     init() {
         
     }
+    
+    public static func main() -> Void {
+        
+        let program = NeftysMFNU()
+        
+        
+        
+    }
 }
+
