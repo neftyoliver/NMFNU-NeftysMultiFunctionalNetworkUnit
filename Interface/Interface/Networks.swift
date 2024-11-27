@@ -9,6 +9,14 @@ public protocol UseInterConnection { //Networks can share data througe internal 
     
 }
 
+public protocol IPv4Address {
+    var address: UInt32 { get }
+}
+
+public protocol IPv6Address {
+    var address: UInt64 { get }
+}
+
 public protocol InternetLine {
     
 }
@@ -21,13 +29,13 @@ public protocol Network {
     var isInternetConnected: Bool { get }
     var internetLine: InternetLine? { get }
     var connectedDevices: [MFNUDevice] { get }
-}
-
-public protocol PublicNetwork {
+    var ID: String { get }
     
-}
-
-public protocol SecretNetwork {
+    
+    
+    func activate()
+    func deactivate()
+    func kick(ID: String)
     
 }
 

@@ -41,6 +41,9 @@ public enum IOProrocal: String {
 public protocol IOPort {
     var port: IOPysicalPort { get }
     var proto: IOProrocal { get }
+    //var connectionMethod: NetworkMethod { get }
+    var name: String { get }
+    var description: String { get }
     
     init (port: IOPysicalPort, proto: IOProrocal)
 }
@@ -48,13 +51,19 @@ public protocol IOPort {
 public protocol IOMethod {
     var isOutput: Bool { get }
     var isInput: Bool { get }
-    
+    var name: String { get }
+    var description: String { get }
 }
 
+public protocol PingPong {
+    func ping()
+    func whenPong(_ callback: @escaping (String) -> Void)
+}
 
 public protocol MFNUHardware {
     //Created from the native apple interface
-    
+    var name: String { get }
+    var description: String { get }
 }
 
 public enum MFNUDeviceMode: String {
@@ -62,7 +71,12 @@ public enum MFNUDeviceMode: String {
     case DEVICE = "DEVICE"
 }
 
-public protocol MFNUDevice {
+public protocol MFNUDevice { //incase host and devices both have MFNU
     var name: String { get }
-    
+    var deviceMode: MFNUDeviceMode { get }
+    var ID: String { get }
+    var description: String { get }
+    var isConnected: Bool { get }
+    var isMFNU: Bool { get }
 }
+
